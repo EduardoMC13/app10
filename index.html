@@ -1,0 +1,199 @@
+﻿<html> 
+<head> <title>jQuery Mobile Form</title>
+<meta charset="utf-8">
+ 
+<meta name="viewport" content="width=device-width, initial-scale">
+ <link rel="stylesheet" href="css/jquery-mobile.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+  
+ <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+   <script src="js/jquery-mobile.js"></script>
+<script src="js/script.js" ></script>
+  </head>
+<body>
+   <div data-role="page">
+   <div data-role="header" data-theme="a">
+     <h1> Formulario Escolar  </h1> 
+</div> 
+<div data-role="main" class="ui-content" data-theme="a"  >
+
+   <form method="post" action="mailto:laliuxx593@gmail.com" data-ajax="false" name="formulario" > 
+<fieldset >
+<input type="text" name="horafecha" id="horafecha"  value="" onClick="fechahora()" placeholder="Click para obtener fecha">
+   <label for="nombre">Nombre </label>
+    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+      <label for="apellido_m">Apellido Materno </label>
+    <input type="text" name="apellido_m" id="apellido_m" placeholder="Apellido Materno">
+          <label for="apellido_p">Apellido Paterno </label>
+    <input type="text" name="apellido_p" id="apellido_p"  placeholder="Apellido Paterno">
+     <fieldset data-role="controlgroup"> <legend>Genero:</legend> 
+     <label for="masculino">Masculino</label> 
+     <input type="radio" name="genero" id="masculino" value="male"> 
+     <label for="femenino">Femenino</label> 
+     <input type="radio" name="genero" id="femenino" value="femenino"> 
+     </fieldset>
+  
+    <div data-role="fieldcontain" align= "center">
+<label>Fecha de Nacimiento :</label>
+<fieldset data-role="controlgroup"data-type="horizontal" >
+
+<label for="select_mes">Month</label>
+<select name="select_mes" id="select_mes">
+<option>Mes</option>
+<option value="ene">Enero </option>
+<option value="feb">Febrero </option>
+<option value="mar">Marzo </option>
+<option value="abr">Abrir </option>
+<option value="may">Mayo</option>
+<option value="jun">Junio </option>
+<option value="jal">Julio </option>
+<option value="ago">Agosto </option>
+<option value="sep">Septiembre </option>
+<option value="oct">Octubre </option>
+<option value="nov">Noviembre </option>
+<option value="dic">Diciembre </option>
+<!-- etc. -->
+</select>
+<label for="select_dia">Day</label>
+<select name="select_dia" id="select_dia">
+<option>Dia</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<!-- etc. -->
+</select>
+<label for="select_year">Año</label>
+<select name="select_year" id="select_year">
+<option>Year</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<!-- etc. -->
+</select>
+</fieldset>
+</div>
+    <div >
+      <label >Nacionalidad</label>
+<fieldset data-role="controlgroup" data-mini="true" data-type = "horizontal">
+<input type="radio" name="radio-mini2" id="radio-mini-5" value="choice-5"
+checked="checked" />
+<label for="radio-mini-5">Mexicana </label>
+<input type="radio" name="radio-mini2" id="radio-mini-6" value="choice-6" />
+<label for="radio-mini-6">
+Extranjera</label>
+
+</fieldset>
+</div>
+ <label for="email">Email </label>
+     <input type="email" id="email" name="email" value="@"placeholder="gmail.com/hotmail.com">
+      <label for="info">Escuela De Procedencia</label> 
+      <input type="text" id="email" name="proc"placeholder=" Escuela procedencia">
+      </textarea>
+ <label for="prom">Promedio De Secundaria </label>
+     <input type="text" id="prom" name="prom"  placeholder="Promedio Secundaria">
+
+     <label for="nom_tutor">Nombre Del Tutor </label>
+<input type="text" name="nom_tutor" id="nom_tutor"placeholder="Nombre Del Tutor"/>
+ <label for="ocup">Ocupacion Del Tutor </label>
+     <input type="text" id="ocup" name="ocup"placeholder="Ocupacion" >
+     <label for="tel">Teléfono </label>
+<input type="text" name="tel" id="tel" value="" placeholder="Telefono"/>
+
+ <label for="direccion">Direccion </label>
+    <input type="text" name="direccion" id="direccion"placeholder="Direccion" >
+    <label for="colonia">Colonia </label>
+    <input type="text" name="colonia" id="colonia" placeholder="Colonia">
+    <label for="municipio">Municipio </label>
+    <input type="text" name="municipio" id="municipio" placeholder="Municipio">
+    <label for="codigop">Codigo Postal </label>
+    <input type="text" name="codigop" id="codigop" placeholder="Codigo Postal" >
+   
+  
+    <div >
+      <label >Tienes Beca(Cualquier tipo)</label>
+<fieldset data-role="controlgroup" data-mini="true" data-type = "horizontal">
+<input type="radio" name="radio-mini3" id="radio-mini-7" value="choice-7"
+checked="checked" />
+<label for="radio-mini-7">Si</label>
+<input type="radio" name="radio-mini3" id="radio-mini-8" value="choice-8" />
+<label for="radio-mini-8">
+No</label>
+
+</fieldset>
+</div>
+
+     <fieldset data-role="controlgroup"> <legend>Especialidades que te gustaria estar</legend>
+      <label for="programacion">Programacion</label> 
+     <input type="checkbox" id="programacion" value="programacion"> 
+     <label for="electricidad">Electricidad</label> 
+     <input type="checkbox" id="electricidad" value="electricidad">
+      <label for="mecanica">Mecanica</label> 
+      <input type="checkbox" id="mecanica" value="mecanica">
+      <label for="logistica">Logistica</label> 
+      <input type="checkbox" id="logistica" value="logistica"> </fieldset> 
+      <div >
+<label >Club al que te gustaria unir</label>
+<fieldset data-role="controlgroup" data-mini="true" data-type = "horizontal">
+<input type="radio" name="radio-mini" id="radio-mini-1" value="choice-1"
+checked="checked" />
+<label for="radio-mini-1">Futbol </label>
+<input type="radio" name="radio-mini" id="radio-mini-2" value="choice-2" />
+<label for="radio-mini-2">
+Basquebol </label>
+<input type="radio" name="radio-mini" id="radio-mini-3" value="choice-3" />
+<label for="radio-mini-3">Voleboy</label>
+<input type="radio" name="radio-mini" id="radio-mini-4" value="choice-4" />
+<label for="radio-mini-4">Ninguno</label>
+</fieldset>
+</div>
+<br>
+<br>
+      <div> 
+<label for="on_off">Desea Recibir Notificaciones </label>
+<select name="on_off" id="on_off" data-role="slider" data-mini="true">
+<option value="off">Off</option>
+<option value="on">On</option>
+</select>
+</div>
+       <input type="submit" data-inline="true" value="Enviar" data-theme> </form> 
+       </div> 
+        <div data-role="footer" data-theme="a" data-position="fixed">
+    <h4>Formulario Escolar</h4>
+     <h4>Eduardo Morales Corona</h4>
+  </div>
+</fieldset>
+  </form>    
+</body> 
+</html>

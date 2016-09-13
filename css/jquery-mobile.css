@@ -1,0 +1,26 @@
+@charset "utf-8";
+.ui-mobile [data-role=header],.ui-mobile [data-role=footer]{ 
+background-color: rgba(0,153,204,1); 
+color: beige; 
+text-shadow: 1px 1px 12px #000; 
+font-size: 22px; 
+} 
+img{ width:100%; 
+} 
+form label,legend fieldset{ 
+color:#123456; 
+} 
+p{ 
+text-align:center; 
+} 
+.body {
+	color:#999;
+}
+form {
+    /* Sólo para centrar el formulario a la página */
+    margin: 0 auto;
+    width: 600px;
+    /* Para ver el borde del formulario */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
